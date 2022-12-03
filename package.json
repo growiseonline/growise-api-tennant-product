@@ -7,8 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon src/main.ts",
     "build": "tsc",
+    "build:serverless": "ts-node src/scripts/serverlessbuild.ts ",
     "start": "node build/main.js",
-    "env:dev": "docker-compose up -d"
+    "env:dev": "docker-compose up -d",
   },
   "author": "",
   "license": "ISC",
@@ -19,6 +20,7 @@
     "joi": "^17.6.0",
     "joi-to-json": "^2.6.1",
     "joi-to-json-schema": "^5.1.0",
+    "js-yaml": "^4.1.0",
     "json-joi-converter": "^17.2.1-g",
     "mongoose": "^6.6.1",
     "nodemon": "^2.0.19",
